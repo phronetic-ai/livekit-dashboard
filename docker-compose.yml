@@ -6,8 +6,6 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: livekit-dashboard
-    ports:
-      - "8000:8000"
     environment:
       # LiveKit Configuration
       LIVEKIT_URL: ${LIVEKIT_URL:-http://localhost:7880}
